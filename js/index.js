@@ -92,7 +92,10 @@ button.textContent = siteContent.cta['button']
 
 
 
+//adding middle image
 
+const middlePic = document.querySelector("#middle-img")
+middlePic.setAttribute("src", siteContent["main-content"]["middle-img-src"])
 
 
 // const features = document.querySelector(".text-content")
@@ -107,11 +110,6 @@ button.textContent = siteContent.cta['button']
 // const aboutContent = about.querySelector("p")
 // aboutContent.textContent ="About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
 
-// // const middlePic = document.querySelector("#middle-img")
-// // middlePic.setAttribute = ("src", "img/mid-page-accent.jpg")
-
-// const midImg = document.querySelector('#middle-img')
-// midImg.src = siteContent["main-content"]["middle-img-src"]
 
 
 // const services = document.querySelector(".text-content:nth-of-type(3) h4")
