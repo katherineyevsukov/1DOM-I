@@ -53,11 +53,18 @@ navTags[4].textContent = "About"
 navTags[5].textContent = "Contact"
 
 let h1 = document.querySelector('h1')
-
 console.log(h1)
-
 h1.textContent = "DOM Is Awesome"
 
-const ctaImg = document.querySelector('#cta-img')
-
+const ctaImg = document.querySelector("#cta-img")
 ctaImg.setAttribute("src", "img/header-img.png")
+
+const button = document.querySelector("button")
+button.textContent = "Get Started"
+
+
+const features = document.querySelector(".text-content")
+let featuresTitle = features.querySelector('h4')
+featuresTitle.textContent = "Features"
+let featuresContent = features.querySelector("p")
+featuresContent.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
