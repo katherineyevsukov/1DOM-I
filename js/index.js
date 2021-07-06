@@ -51,3 +51,13 @@ navTags[2].textContent = "Vision"
 navTags[3].textContent = "Features"
 navTags[4].textContent = "About"
 navTags[5].textContent = "Contact"
+
+let h1 = document.querySelector('h1')
+
+console.log(h1)
+
+h1.textContent = "DOM Is Awesome"
+
+const ctaImg = document.querySelector('#cta-img')
+
+ctaImg.setAttribute("src", "img/header-img.png")
