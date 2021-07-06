@@ -86,14 +86,21 @@ button.textContent = siteContent.cta['button']
 
 
 //ADDING MAIN CONTENT
+
 //features section
+const featuresTitle = document.querySelector('.top-content .text-content:nth-of-type(1) h4')
+featuresTitle.textContent = siteContent["main-content"]["features-h4"]
+const featuresPar = document.querySelector('.top-content .text-content:nth-of-type(1) p')
+featuresPar.textContent = siteContent["main-content"]["features-content"]
 
-
-
+//about section
+const aboutTitle = document.querySelector('.top-content .text-content:nth-of-type(2) h4')
+aboutTitle.textContent = siteContent["main-content"]["about-h4"]
+const aboutPar = document.querySelector('.top-content .text-content:nth-of-type(2) p')
+aboutPar.textContent = siteContent["main-content"]["about-content"]
 
 
 //adding middle image
-
 const middlePic = document.querySelector("#middle-img")
 middlePic.setAttribute("src", siteContent["main-content"]["middle-img-src"])
 
