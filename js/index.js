@@ -44,7 +44,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 //Navigation
 let navTags = document.querySelectorAll('nav > a')
 
-console.log(navTags)
+// console.log(navTags)
 
 navTags[0].textContent = siteContent.nav["nav-item-1"]
 navTags[1].textContent = siteContent.nav["nav-item-2"]
@@ -70,9 +70,9 @@ nav.prepend(secondNewA)
 //change color of navigation text to green
 nav.style.color = 'green'
 
-// let h1 = document.querySelector('h1')
+let h1 = document.querySelector('h1')
 // console.log(h1)
-// h1.textContent = "DOM Is Awesome"
+h1.textContent = siteContent['cta']['h1']
 
 // const ctaImg = document.querySelector("#cta-img")
 // ctaImg.setAttribute("src", "img/header-img.png")
