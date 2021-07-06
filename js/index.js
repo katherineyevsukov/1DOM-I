@@ -42,7 +42,7 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //Navigation
-const navTags = document.querySelectorAll('nav > a')
+const navTags = document.querySelectorAll('nav a')
 
 // console.log(navTags)
 
@@ -68,9 +68,11 @@ secondNewA.href = '#'
 nav.prepend(secondNewA)
 
 //change color of navigation text to green
-nav.style.color = 'green'
-
-
+// navTags.fontcolor('green')
+// const coloredNavs = document.querySelectorAll('header nav a')
+navTags.forEach(navTag => navTag.style.color = 'green')
+newA.style.color = 'green'
+secondNewA.style.color = 'green'
 //adding h1 text
 const h1 = document.querySelector('h1')
 // console.log(h1)
@@ -122,30 +124,6 @@ visionTitle.textContent = siteContent["main-content"]["vision-h4"]
 const visionPar = document.querySelector('.bottom-content .text-content:nth-of-type(3) p')
 visionPar.textContent = siteContent["main-content"]["vision-content"]
 
-// const features = document.querySelector(".text-content")
-// let featuresTitle = features.querySelector('h4')
-// featuresTitle.textContent = "Features"
-// let featuresContent = features.querySelector("p")
-// featuresContent.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
-
-// const about = document.querySelector(".text-content:nth-of-type(2)")
-// const aboutTitle = about.querySelector("h4")
-// aboutTitle.textContent = "About"
-// const aboutContent = about.querySelector("p")
-// aboutContent.textContent ="About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
-
-
-
-// const services = document.querySelector(".text-content:nth-of-type(3) h4")
-// // const servicesTitle = services.querySelector("h4")
-// servicesTitle.textContent = "Services"
-// const servicesContent = services.querySelector("p")
-// servicesContent.textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
-
-
-// const product = document.querySelector(".text-content:nth-of-type(3)")
-// const productTitle = product.querySelector("h4")
-// productTitle.textContent = "Product"
 
 
 //contact section
