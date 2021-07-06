@@ -41,30 +41,72 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+//Navigation
 let navTags = document.querySelectorAll('nav > a')
 
 console.log(navTags)
 
-navTags[0].textContent = "Services"
-navTags[1].textContent = "Product"
-navTags[2].textContent = "Vision"
-navTags[3].textContent = "Features"
-navTags[4].textContent = "About"
-navTags[5].textContent = "Contact"
+navTags[0].textContent = siteContent.nav["nav-item-1"]
+navTags[1].textContent = siteContent.nav["nav-item-2"]
+navTags[2].textContent = siteContent.nav["nav-item-3"]
+navTags[3].textContent = siteContent.nav["nav-item-4"]
+navTags[4].textContent = siteContent.nav["nav-item-5"]
+navTags[5].textContent = siteContent.nav["nav-item-6"]
 
-let h1 = document.querySelector('h1')
-console.log(h1)
-h1.textContent = "DOM Is Awesome"
-
-const ctaImg = document.querySelector("#cta-img")
-ctaImg.setAttribute("src", "img/header-img.png")
-
-const button = document.querySelector("button")
-button.textContent = "Get Started"
+//added new a tag to end using .appendchild
+let nav = document.querySelector('nav')
+let newA = document.createElement('a')
+newA.textContent = 'Blog'
+newA.href = '#'
+nav.appendChild(newA)
 
 
-const features = document.querySelector(".text-content")
-let featuresTitle = features.querySelector('h4')
-featuresTitle.textContent = "Features"
-let featuresContent = features.querySelector("p")
-featuresContent.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+//added new a tag to beginning using .prepend
+const secondNewA = document.createElement('a')
+secondNewA.textContent = 'Home'
+secondNewA.href = '#'
+nav.prepend(secondNewA)
+
+//change color of navigation text to green
+nav.style.color = 'green'
+
+// let h1 = document.querySelector('h1')
+// console.log(h1)
+// h1.textContent = "DOM Is Awesome"
+
+// const ctaImg = document.querySelector("#cta-img")
+// ctaImg.setAttribute("src", "img/header-img.png")
+
+// const button = document.querySelector("button")
+// button.textContent = "Get Started"
+
+
+// const features = document.querySelector(".text-content")
+// let featuresTitle = features.querySelector('h4')
+// featuresTitle.textContent = "Features"
+// let featuresContent = features.querySelector("p")
+// featuresContent.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+// const about = document.querySelector(".text-content:nth-of-type(2)")
+// const aboutTitle = about.querySelector("h4")
+// aboutTitle.textContent = "About"
+// const aboutContent = about.querySelector("p")
+// aboutContent.textContent ="About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+// // const middlePic = document.querySelector("#middle-img")
+// // middlePic.setAttribute = ("src", "img/mid-page-accent.jpg")
+
+// const midImg = document.querySelector('#middle-img')
+// midImg.src = siteContent["main-content"]["middle-img-src"]
+
+
+// const services = document.querySelector(".text-content:nth-of-type(3) h4")
+// // const servicesTitle = services.querySelector("h4")
+// servicesTitle.textContent = "Services"
+// const servicesContent = services.querySelector("p")
+// servicesContent.textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+
+// const product = document.querySelector(".text-content:nth-of-type(3)")
+// const productTitle = product.querySelector("h4")
+// productTitle.textContent = "Product"
