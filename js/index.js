@@ -42,7 +42,7 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //Navigation
-let navTags = document.querySelectorAll('nav > a')
+const navTags = document.querySelectorAll('nav > a')
 
 // console.log(navTags)
 
@@ -54,8 +54,8 @@ navTags[4].textContent = siteContent.nav["nav-item-5"]
 navTags[5].textContent = siteContent.nav["nav-item-6"]
 
 //added new a tag to end using .appendchild
-let nav = document.querySelector('nav')
-let newA = document.createElement('a')
+const nav = document.querySelector('nav')
+const newA = document.createElement('a')
 newA.textContent = 'Blog'
 newA.href = '#'
 nav.appendChild(newA)
@@ -70,15 +70,19 @@ nav.prepend(secondNewA)
 //change color of navigation text to green
 nav.style.color = 'green'
 
-let h1 = document.querySelector('h1')
+
+//adding h1 text
+const h1 = document.querySelector('h1')
 // console.log(h1)
 h1.textContent = siteContent['cta']['h1']
 
-// const ctaImg = document.querySelector("#cta-img")
-// ctaImg.setAttribute("src", "img/header-img.png")
+//adding circle image
+const ctaImg = document.querySelector('#cta-img')
+ctaImg.setAttribute('src', siteContent['cta']['img-src'])
 
-// const button = document.querySelector("button")
-// button.textContent = "Get Started"
+//adding button text
+const button = document.querySelector("button")
+button.textContent = siteContent['cta']['button']
 
 
 // const features = document.querySelector(".text-content")
