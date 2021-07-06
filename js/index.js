@@ -74,15 +74,25 @@ nav.style.color = 'green'
 //adding h1 text
 const h1 = document.querySelector('h1')
 // console.log(h1)
-h1.textContent = siteContent['cta']['h1']
+h1.textContent = siteContent.cta['h1']
 
 //adding circle image
 const ctaImg = document.querySelector('#cta-img')
-ctaImg.setAttribute('src', siteContent['cta']['img-src'])
+ctaImg.setAttribute('src', siteContent.cta['img-src'])
 
 //adding button text
 const button = document.querySelector("button")
-button.textContent = siteContent['cta']['button']
+button.textContent = siteContent.cta['button']
+
+
+//ADDING MAIN CONTENT
+//features section
+
+
+
+
+
+
 
 
 // const features = document.querySelector(".text-content")
@@ -114,3 +124,20 @@ button.textContent = siteContent['cta']['button']
 // const product = document.querySelector(".text-content:nth-of-type(3)")
 // const productTitle = product.querySelector("h4")
 // productTitle.textContent = "Product"
+
+
+//contact section
+const contactHeader = document.querySelector('.contact h4')
+contactHeader.textContent = siteContent.contact['contact-h4']
+
+const contactInfo = document.querySelectorAll('.contact p')
+
+contactInfo[0].textContent = siteContent.contact['address']
+contactInfo[1].textContent = siteContent.contact['phone']
+contactInfo[2].textContent = siteContent.contact['email']
+
+
+//footersection
+
+const footer = document.querySelector('footer')
+footer.textContent = siteContent.footer.copyright
