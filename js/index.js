@@ -104,6 +104,23 @@ aboutPar.textContent = siteContent["main-content"]["about-content"]
 const middlePic = document.querySelector("#middle-img")
 middlePic.setAttribute("src", siteContent["main-content"]["middle-img-src"])
 
+//services section
+const servicesTitle = document.querySelector('.bottom-content .text-content:nth-of-type(1) h4')
+servicesTitle.textContent = siteContent["main-content"]["services-h4"]
+const servicesPar = document.querySelector('.bottom-content .text-content:nth-of-type(1) p')
+servicesPar.textContent = siteContent["main-content"]["services-content"]
+
+//product section
+const productTitle  = document.querySelector('.bottom-content .text-content:nth-of-type(2) h4')
+productTitle.textContent = siteContent["main-content"]["product-h4"]
+const productPar = document.querySelector('.bottom-content .text-content:nth-of-type(2) p')
+productPar.textContent = siteContent["main-content"]["product-content"]
+
+//vision section
+const visionTitle = document.querySelector('.bottom-content .text-content:nth-of-type(3) h4')
+visionTitle.textContent = siteContent["main-content"]["vision-h4"]
+const visionPar = document.querySelector('.bottom-content .text-content:nth-of-type(3) p')
+visionPar.textContent = siteContent["main-content"]["vision-content"]
 
 // const features = document.querySelector(".text-content")
 // let featuresTitle = features.querySelector('h4')
